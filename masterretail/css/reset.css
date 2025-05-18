@@ -1,0 +1,76 @@
+/* Скидання базових стилів */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-width: 320px;
+  font-family: Arial, sans-serif; /* Додано базовий шрифт */
+  font-size: 16px; /* Встановлено стандартний розмір шрифту */
+  color: #000000;
+  line-height: 1.5; /* Збільшено для читабельності */
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box; /* Встановлено за замовчуванням */
+}
+
+*, *::before, *::after {
+  box-sizing: inherit; /* Спадкове значення box-sizing */
+  margin: 0;
+  padding: 0;
+}
+
+/* Стилі для посилань */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:focus, a:hover {
+  text-decoration: underline; /* Легке підкреслення для взаємодії */
+}
+
+/* Скидання стилів списків */
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Скидання для заголовків */
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: normal; /* Уточнено */
+  line-height: 1.2; /* Легке збільшення для читабельності */
+}
+
+/* Скидання стилів зображень */
+img {
+  max-width: 100%; /* Адаптивне масштабування */
+  height: auto;
+  vertical-align: middle;
+}
+
+/* Скидання для форм і кнопок */
+button, input, textarea {
+  font: inherit; /* Унаслiдовано стиль тексту */
+  color: inherit;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+textarea {
+  resize: none; /* Вимкнено зміну розміру за замовчуванням */
+}
+
+/* Фокус для елементів */
+*:focus {
+  outline: none;
+}
